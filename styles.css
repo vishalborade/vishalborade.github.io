@@ -1018,11 +1018,11 @@ a.contact-card:hover .contact-card-icon {
 /* Viewport Height Responsiveness (for small screen heights / scaled displays) */
 @media (max-height: 670px) {
     .section {
-        padding: 2.5rem 0 5rem 0; /* Tighter top padding, generous bottom padding to prevent title bleed */
+        padding: 2rem 0 4rem 0; /* Tighter top padding, generous bottom padding to prevent title bleed */
     }
     
     .section-header {
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem;
     }
     
     .hero {
@@ -1060,44 +1060,70 @@ a.contact-card:hover .contact-card-icon {
         line-height: 1.45;
     }
     
-    .scroll-down {
-        margin-top: 1.5rem;
+    .expertise-card {
+        padding: 1.1rem;
     }
     
-    .expertise-card, .project-card {
-        padding: 1.25rem;
-    }
-    
-    .card-icon-container, .project-icon-box {
-        width: 2.5rem;
-        height: 2.5rem;
-        margin-bottom: 0.75rem;
+    .card-icon-container {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-bottom: 0.5rem;
     }
     
     .card-icon {
-        width: 1.4rem;
-        height: 1.4rem;
+        width: 1.2rem;
+        height: 1.2rem;
     }
     
-    .project-icon {
-        width: 1.25rem;
-        height: 1.25rem;
-    }
-    
-    .project-category {
-        font-size: 0.7rem;
+    .card-title {
+        font-size: 1.05rem;
         margin-bottom: 0.3rem;
     }
     
-    .card-title, .project-title {
-        font-size: 1.15rem;
-        margin-bottom: 0.4rem;
+    .card-description {
+        font-size: 0.82rem;
+        line-height: 1.35;
+        margin-bottom: 0.75rem;
     }
     
-    .card-description, .project-description {
-        font-size: 0.88rem;
-        line-height: 1.4;
-        margin-bottom: 1rem;
+    .skills-list li {
+        font-size: 0.8rem;
+    }
+    
+    .project-card {
+        padding: 1rem;
+    }
+    
+    .project-icon-box {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-icon {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    
+    .project-category {
+        font-size: 0.65rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .project-title {
+        font-size: 1.05rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .project-description {
+        font-size: 0.82rem;
+        line-height: 1.35;
+        margin-bottom: 0.75rem;
+    }
+    
+    .project-tag {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.5rem;
     }
     
     .about-grid {
