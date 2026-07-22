@@ -45,26 +45,62 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero section" id="home">
+        <section class="hero" id="home">
             <div class="container hero-container">
-                <div class="hero-content reveal">
-                    <div class="hero-avatar">
-                        <span class="avatar-text">VB</span>
+                <div class="hero-layout">
+                    <!-- Left Column: Hero Text Content -->
+                    <div class="hero-content">
+                        <div class="hero-avatar">
+                            <span class="avatar-text">VB</span>
+                        </div>
+                        <span class="hero-tagline">Welcome to my portfolio</span>
+                        <h1 class="hero-title">Hi, I'm <span class="highlight">Vishal Borade</span></h1>
+                        <p class="hero-subtitle"><span id="roleText">QA/Testing Specialist</span></p>
+                        <p class="hero-description">
+                            Dedicated QA Engineer specializing in building robust test automation frameworks, ensuring software quality, and streamlining CI/CD pipelines.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                            <a href="#projects" class="btn btn-outline">View My Work</a>
+                        </div>
+                        
+                        <div class="hero-socials">
+                            <a href="https://linkedin.com/in/vishalborade" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/vishalborade" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="mailto:vishalborade@live.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
                     </div>
-                    
-                    <span class="hero-tagline">HELLO, I'M</span>
-                    <h1 class="hero-title">Vishal Borade</h1>
-                    <p class="hero-subtitle"><span id="roleText">QA/Testing Specialist</span></p>
-                    <p class="hero-description">
-                        Ensuring software excellence through functional & automation testing, project management, and team leadership
-                    </p>
-                    
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-outline">Let's Connect</a>
-                        <a href="#projects" class="btn btn-outline">View My Work</a>
+
+                    <!-- Right Column: Interactive Code Terminal Mockup -->
+                    <div class="hero-graphic-container">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <span class="terminal-dot close"></span>
+                                <span class="terminal-dot minimize"></span>
+                                <span class="terminal-dot expand"></span>
+                                <span class="terminal-title">github_test.py</span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="code-line"><span class="keyword">import</span> pytest</div>
+                                <div class="code-line"><span class="keyword">from</span> playwright.sync_api <span class="keyword">import</span> sync_playwright</div>
+                                <div class="code-line"><span class="comment"># Running Playwright Suite...</span></div>
+                                <div class="code-line"><span class="keyword">def</span> <span class="func">test_github_navigation</span>():</div>
+                                <div class="code-line indent-1"><span class="keyword">with</span> sync_playwright() <span class="keyword">as</span> p:</div>
+                                <div class="code-line indent-2">browser = p.chromium.launch()</div>
+                                <div class="code-line indent-2">page = browser.new_page()</div>
+                                <div class="code-line indent-2">page.goto(<span class="string">"https://github.com/vishalborade"</span>)</div>
+                                <div class="code-line indent-2"><span class="keyword">assert</span> <span class="string">"vishalborade"</span> <span class="keyword">in</span> page.title()</div>
+                                <div class="code-line indent-2">browser.close()</div>
+                                <div class="terminal-output">
+                                    <div class="output-line success"><i class="fas fa-check-circle"></i> [INFO] test_github_navigation - PASSED</div>
+                                    <div class="output-line success"><i class="fas fa-check-circle"></i> [INFO] Browser Closed Successfully</div>
+                                    <div class="output-line"><span class="prompt">$</span> <span class="terminal-cursor"></span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
