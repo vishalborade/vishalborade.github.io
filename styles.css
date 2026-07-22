@@ -514,23 +514,75 @@ button {
     width: 2.75rem;
     height: 2.75rem;
     border-radius: 50%;
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    color: var(--text-light);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
     transition: all var(--transition-normal);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.hero-socials a:hover {
+/* LinkedIn Official Colors */
+.hero-socials a[aria-label="LinkedIn"] {
+    background-color: rgba(0, 119, 181, 0.08);
+    border: 1px solid rgba(0, 119, 181, 0.25);
+    color: #0077b5;
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.05);
+}
+
+.hero-socials a[aria-label="LinkedIn"]:hover {
     color: #ffffff;
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background-color: #0077b5;
+    border-color: #0077b5;
     transform: translateY(-4px) scale(1.1);
-    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+    box-shadow: 0 8px 20px rgba(0, 119, 181, 0.35);
+}
+
+/* GitHub Official Colors (Dark Mode Default) */
+.hero-socials a[aria-label="GitHub"] {
+    background-color: rgba(240, 246, 252, 0.08);
+    border: 1px solid rgba(240, 246, 252, 0.25);
+    color: #f0f6fc;
+    box-shadow: 0 4px 12px rgba(240, 246, 252, 0.05);
+}
+
+.hero-socials a[aria-label="GitHub"]:hover {
+    color: #0d1117;
+    background-color: #f0f6fc;
+    border-color: #f0f6fc;
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(240, 246, 252, 0.35);
+}
+
+/* GitHub Official Colors (Light Mode) */
+[data-theme="light"] .hero-socials a[aria-label="GitHub"] {
+    background-color: rgba(24, 23, 23, 0.06);
+    border: 1px solid rgba(24, 23, 23, 0.25);
+    color: #181717;
+    box-shadow: 0 4px 12px rgba(24, 23, 23, 0.05);
+}
+
+[data-theme="light"] .hero-socials a[aria-label="GitHub"]:hover {
+    color: #ffffff;
+    background-color: #181717;
+    border-color: #181717;
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(24, 23, 23, 0.25);
+}
+
+/* Email Official Colors */
+.hero-socials a[aria-label="Email"] {
+    background-color: rgba(234, 67, 53, 0.08);
+    border: 1px solid rgba(234, 67, 53, 0.25);
+    color: #ea4335;
+    box-shadow: 0 4px 12px rgba(234, 67, 53, 0.05);
+}
+
+.hero-socials a[aria-label="Email"]:hover {
+    color: #ffffff;
+    background-color: #ea4335;
+    border-color: #ea4335;
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(234, 67, 53, 0.35);
 }
 
 /* Coding Terminal Graphic */
