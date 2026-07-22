@@ -117,7 +117,7 @@ button {
 }
 
 .section {
-    padding: 4rem 0 18vh 0;
+    padding: 5.5rem 0 18vh 0;
     position: relative;
 }
 
@@ -1018,7 +1018,7 @@ a.contact-card:hover .contact-card-icon {
 /* Viewport Height Responsiveness (for small screen heights / scaled displays) */
 @media (max-height: 670px) {
     .section {
-        padding: 2rem 0 4rem 0; /* Tighter top padding, generous bottom padding to prevent title bleed */
+        padding: 5rem 0 5vh 0;
     }
     
     .section-header {

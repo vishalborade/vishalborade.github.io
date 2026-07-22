@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const targetEl = document.querySelector(href);
                 if (targetEl) {
                     window.scrollTo({
-                        top: targetEl.offsetTop - 72,
+                        top: href === '#home' ? 0 : targetEl.offsetTop,
                         behavior: 'smooth'
                     });
                 }
